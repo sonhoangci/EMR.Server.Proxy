@@ -1,0 +1,6 @@
+{
+  "name": "EMR Proxy",
+  "description": "A basic Node.js API using Express",
+  "repository": "https://github.com/sonhoangci/",
+  "keywords": ["node", "express"]
+}
