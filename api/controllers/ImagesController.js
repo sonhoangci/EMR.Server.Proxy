@@ -19,17 +19,17 @@ module.exports = {
 			}
 			else {
 				//console.log(res)
-				console.log(body)  
+				//console.log(body)  
 				content = body;
 				
 			}
 			if ($output == 'image'){
 				let base64Image = content.split(';base64,').pop();
 				var img = Buffer.from(base64Image, 'base64');
-
 				res.writeHead(200, {
 					'Content-Type': 'image/png',
-					'Content-Length': img.length
+					'Content-Length': img.length,
+					"Access-Control-Allow-Origin": '*'
 				});
 				res.end(img); 
 			}else{
